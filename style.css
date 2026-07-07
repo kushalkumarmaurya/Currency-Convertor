@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4e4ba;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 22rem;
+    max-width: 90vw;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#theme-btn{
+    box-shadow: 0 5px 10px rgba(154, 145, 145, 0.3);
+}
+
+h2{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+}
+
+form{
+    margin: 2rem 0 1rem 0;
+}
+
+.amount label{
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#amount-input{
+    box-shadow: 0 5px 10px rgba(154, 145, 145, 0.3);
+}
+
+form select, button, input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+    font-family: inherit;
+}
+
+form input{
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 1rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+}
+
+.from, .to{
+    flex: 1;
+}
+
+.from p, .to p{
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.3rem;
+}
+
+.dropdown i{
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    color: #af4d98;
+}
+
+.select-container img{
+    max-width: 2rem;
+    align-self: center;
+}
+
+.select-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+    padding: 0.3rem;
+    gap: 0.3rem;
+    box-shadow: 0 5px 10px rgba(154, 145, 145, 0.3);
+}
+
+.select-container select{
+    font-size: 0.95rem;
+    width: auto;
+    cursor: pointer;
+    background: transparent;
+}
+
+.msg{
+    text-align: center;
+    padding: 15px;
+    background: #f0f4ff;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin: 1.2rem 0 0.4rem 0;
+    word-wrap: break-word;
+    box-shadow: 0 5px 10px rgba(154, 145, 145, 0.3);
+}
+
+.last-updated{
+    text-align: center;
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 1rem;
+    min-height: 1rem;
+}
+
+.trend{
+    margin-bottom: 1rem;
+    padding: 0.9rem 1rem;
+    background: #f8f8fb;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(154, 145, 145, 0.3);
+}
+
+.trend-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.trend-range{
+    display: flex;
+    gap: 0.3rem;
+}
+
+.trend-range button{
+    width: auto;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #666;
+    cursor: pointer;
+    border-radius: 999px;
+}
+
+.trend-range button.active{
+    background: #af4d98;
+    border-color: #af4d98;
+    color: #fff;
+}
+
+#trend-chart{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#trend-chart svg{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.trend-label{
+    text-align: center;
+    font-size: 0.78rem;
+    margin-top: 0.4rem;
+    min-height: 1rem;
+}
+
+.result-actions{
+    margin-bottom: 0.8rem;
+}
+
+#copy-btn{
+    height: 2.4rem;
+    background-color: #eee;
+    color: #333;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 5px 10px rgba(154, 145, 145, 0.3);
+    
+}
+
+#copy-btn:hover{
+    transition: all 0.3s ease;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(154, 145, 145, 0.3);
+
+}
+
+form button[type="submit"]{
+
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: 3rem;
+    background-color: #af4d98;
+    color: #fff;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+form button[type="submit"]:hover:not(:disabled){
+    background-color: #963e82;
+    transform: translateY(-1px);
+}
+
+form button:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.fa-arrow-right-arrow-left {
+    transition: transform 0.3s ease;
+}
+
+.fa-arrow-right-arrow-left:hover {
+    transform: rotate(180deg);
+}
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark .container {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark .msg {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+body.dark .last-updated{
+    color: #aaa;
+}
+
+body.dark .amount label,
+body.dark .from p,
+body.dark .to p{
+    color: #bbb;
+}
+
+body.dark .trend{
+    background: #2a2a2a;
+}
+
+body.dark .trend-header{
+    color: #ccc;
+}
+
+body.dark .trend-range button{
+    border-color: #555;
+    color: #ccc;
+}
+
+body.dark .trend-range button.active{
+    background: #af4d98;
+    border-color: #af4d98;
+    color: #fff;
+}
+
+
+
+body.dark #copy-btn{
+    background-color: #333;
+    color: white;
+    box-shadow: 0 5px 10px rgba(154, 145, 145, 0.3);
+}
+
+body.dark #copy-btn:hover{
+    transition: all 0.3s ease;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(154, 145, 145, 0.3);
+}
+
+
+
+body.dark button[type="submit"] {
+    background-color: #af4d98;
+    box-shadow: 0 5px 10px rgba(154, 145, 145, 0.3);
+}
+
+body.dark form input,
+body.dark .select-container{
+    border-color: #444;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+body.dark select{
+    color: white;
+}
+
+body.dark select option{
+    color: black;
+}
+
+#theme-btn {
+    margin: 0 auto 1rem auto;
+    display: block;
+    width: 60%;
+    text-align: center;
+    height: 2.4rem;
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+body.dark #theme-btn{
+    background: #333;
+    color: white;
+}
+
+#theme-btn:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 400px){
+    .container{
+        width: 95vw;
+        padding: 1.5rem;
+    }
+
+    .dropdown{
+        flex-wrap: wrap;
+    }
+}
