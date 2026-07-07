@@ -6,7 +6,7 @@ A clean, responsive currency converter with live exchange rates, dark mode, and 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 
-**🔗 Live Demo:** [your-live-link-here](https://your-live-link-here)
+**🔗 Live Demo:** [currency-convertor-kat007.vercel.app](https://currency-convertor-kat007.vercel.app)
 
 ## ✨ Features
 
