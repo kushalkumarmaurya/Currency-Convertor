@@ -23,7 +23,7 @@ A clean, responsive currency converter with live exchange rates, dark mode, and 
 
 | Light Mode | Dark Mode |
 |:---:|:---:|
-| ![Light mode screenshot](./screenshots/screenshot.png) | ![Dark mode screenshot](./screenshots/screenshot2.png) |
+| ![Light mode screenshot](./screenshots/Screenshot.png) | ![Dark mode screenshot](./screenshots/Screenshot2.png) |
 
 ## 🚀 Getting Started
 
